@@ -28,46 +28,46 @@ GDrive-Backup is a web application that allows users to upload files from their 
    
 2. Create a virtual environment and install dependencies:
 
-   '''sh
+   ```sh
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     pip install -r requirements.txt
 
 3. Create a .env file in the backend directory and add your Google OAuth credentials:
 
-   '''makefile
+   ```makefile
    GOOGLE_CLIENT_ID=your-client-id
    GOOGLE_CLIENT_SECRET=your-client-secret
 
 4. Run the Flask application:
 
-   '''sh
+   ```sh
    flask run
 
 ###Frontend
 
 1. Navigate to the frontend directory:
 
-   '''sh
+   ```sh
    cd ../frontend
 
 2. Install dependencies:
 
-   '''sh
+   ```sh
     npm install
 
 3. Start the React application:
 
-   '''sh
+   ```sh
    npm run dev
 
-##Usage
+## Usage
   - Open your web browser and go to http://localhost:3000.
   - Click on the upload box to select a file or drag and drop a file into the box.
   - Click the "Upload" button to upload the file to Google Drive.
   - Check the response message for the upload status.
 
-##Contributing
+## Contributing
   - Fork the repository.
   - Create a new branch (git checkout -b feature/your-feature).
   - Commit your changes (git commit -m 'Add some feature').
